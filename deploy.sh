@@ -3,7 +3,7 @@
 
 . /etc/profile.d/modules.sh
 module add deploy
-cd ${WORKSPACE}/${NAME}-${VERSION}/build-${BUILD_NUMBER}
+cd ${WORKSPACE}/${NAME}-${NAME}-${VERSION}/build-${BUILD_NUMBER}
 rm -rf *
 ../configure --prefix=${SOFT_DIR}
 make install

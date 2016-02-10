@@ -2,7 +2,7 @@
 . /etc/profile.d/modules.sh
 # check-build script for sparsehash
 module load ci
-cd ${WORKSPACE}/${NAME}-${VERSION}/build-${BUILD_NUMBER}
+cd ${WORKSPACE}/${NAME}-${NAME}-${VERSION}/build-${BUILD_NUMBER}
 make check
 
 echo $?
