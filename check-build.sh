@@ -1,7 +1,7 @@
 #!/bin/bash -e
 . /etc/profile.d/modules.sh
 # check-build script for sparsehash
-module load ci
+module add ci
 cd ${WORKSPACE}/${NAME}-${NAME}-${VERSION}/build-${BUILD_NUMBER}
 make check
 
@@ -23,7 +23,7 @@ proc ModulesHelp { } {
 
 module-whatis   "$NAME $VERSION."
 setenv       SPARSEHASH_VERSION       $VERSION
-setenv       SPARSEHASH_DIR           /apprepo/$::env(SITE)/$::env(OS)/$::env(ARCH)/$NAME/$VERSION
+setenv       SPARSEHASH_DIR           /data/ci-build/$::env(SITE)/$::env(OS)/$::env(ARCH)/$NAME/$VERSION
 prepend-path LD_LIBRARY_PATH          $::env(SPARSEHASH_DIR)/lib
 prepend-path CFLAGS                   $::env(SPARSEHASH_DIR)/include
 MODULE_FILE
