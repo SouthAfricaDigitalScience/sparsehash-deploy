@@ -23,11 +23,15 @@ proc ModulesHelp { } {
 
 module-whatis   "$NAME $VERSION."
 setenv       SPARSEHASH_VERSION       $VERSION
-setenv       SPARSEHASH_DIR           /data/ci-build/$::env(SITE)/$::env(OS)/$::env(ARCH)/$NAME/$VERSION
+setenv       SPARSEHASH_DIR                 /data/ci-build/$::env(SITE)/$::env(OS)/$::env(ARCH)/$NAME/$VERSION
 prepend-path LD_LIBRARY_PATH          $::env(SPARSEHASH_DIR)/lib
-prepend-path CFLAGS                   $::env(SPARSEHASH_DIR)/include
+prepend-path CFLAGS                             $::env(SPARSEHASH_DIR)/include
 MODULE_FILE
 ) > modules/$VERSION
 
 mkdir -p ${LIBRARIES_MODULES}/${NAME}
 cp modules/$VERSION ${LIBRARIES_MODULES}/${NAME}
+
+module avail ${NAME}
+module add ${NAME}/${VERSION}
+module add ${NAME}
