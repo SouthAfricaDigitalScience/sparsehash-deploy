@@ -1,4 +1,5 @@
-[![Build Status](https://ci.sagrid.ac.za/job/sparsehash-deploy/badge/icon)](https://ci.sagrid.ac.za/job/sparsehash-deploy/)
+[![Build Status](https://ci.sagrid.ac.za/job/sparsehash-deploy/badge/icon)](https://ci.sagrid.ac.za/job/sparsehash-deploy/) [![DOI](https://zenodo.org/badge/51440790.svg)](https://zenodo.org/badge/latestdoi/51440790)
+
 
 # SparseHash-deploy
 
@@ -24,3 +25,6 @@ The builds are configured using :
 ```
 
 # Citing
+Cite as
+
+Bruce Becker. (2017, June 28). SouthAfricaDigitalScience/sparsehash-deploy: CODE-RADE Foundation Release 3 - SparseHash. Zenodo. http://doi.org/10.5281/zenodo.820566
