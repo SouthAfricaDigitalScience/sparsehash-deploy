@@ -40,4 +40,4 @@ tar xzf  ${SRC_DIR}/${SOURCE_FILE} -C ${WORKSPACE} --skip-old-files
 mkdir -p ${WORKSPACE}/${NAME}-${NAME}-${VERSION}/build-${BUILD_NUMBER}
 cd ${WORKSPACE}/${NAME}-${NAME}-${VERSION}/build-${BUILD_NUMBER}
 ../configure --prefix=${SOFT_DIR}
-make -j 2
+make 

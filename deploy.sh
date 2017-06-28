@@ -32,4 +32,3 @@ cp modules/$VERSION ${LIBRARIES_MODULES}/${NAME}
 
 module avail ${NAME}
 module add ${NAME}/${VERSION}
-module add ${NAME}
