@@ -27,8 +27,8 @@ prepend-path CFLAGS                              $::env(SPARSEHASH_DIR)/include
 MODULE_FILE
 ) > modules/$VERSION
 
-mkdir -p ${LIBRARIES_MODULES}/${NAME}
-cp modules/$VERSION ${LIBRARIES_MODULES}/${NAME}
+mkdir -p ${LIBRARIES}/${NAME}
+cp modules/$VERSION ${LIBRARIES}/${NAME}
 
 module avail ${NAME}
 module add ${NAME}/${VERSION}
